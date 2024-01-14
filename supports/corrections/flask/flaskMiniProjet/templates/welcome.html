@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELLO</title>
+</head>
+
+<body>
+    <h1>Bonjour</h1>
+    <p>Tu es {{ member.name }} et tu as {{ member.age }} ans</p>
+
+    <h1>Les autres membres</h1>
+
+    Tes collègues sont :
+    <ul>
+        {% for current_member in members %}
+        {% if member.name != current_member.name %}
+        <!-- ce n'est pas une bonne pratique de mettre de la 
+            logique metier dans un template. Il faudrait le faire dans la vue 
+            ou dans un template tag -->
+        <li>{{ current_member }}</li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
