@@ -10,7 +10,7 @@ def fizzbuzz1():
             print(num)
 
 
-def fizzbuzz2():
+def fizzbuzz2() -> None:
     for num in range(1, 101):
         res = ""
         if num % 3 == 0:
