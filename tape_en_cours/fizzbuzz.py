@@ -1,13 +1,9 @@
-3 % 2 == 0
-
-
-for nombre in range(1, 101):
-    if nombre > 10 and nombre % 2 == 0:
-        print(nombre)
-    elif nombre > 20:
-        print("plus grand", nombre)
+for num in range(1, 101):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
     else:
-        print("plus petit", nombre)
-
-
-print("fizz" or 2)
+        print(num)
