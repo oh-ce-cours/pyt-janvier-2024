@@ -36,8 +36,8 @@ def my_filter(
     """
     res = []
     for element in elements:
-        tmp = func(element)
-        res.append(tmp)
+        if func(element):
+            res.append(element)
     return res
 
 
