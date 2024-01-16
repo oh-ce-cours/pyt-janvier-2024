@@ -44,4 +44,4 @@ def fizzbuzz4() -> None:
         print("fizz" * (n % 3 == 0) + "buzz" * (n % 5 == 0) or str(n))
 
 
-fizzbuzz1()
+fizzbuzz4()
