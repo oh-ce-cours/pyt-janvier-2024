@@ -24,4 +24,17 @@ def fizzbuzz2() -> None:
         print(res)
 
 
+def fizzbuzz3() -> None:
+    for number in range(1, 101):
+        match number % 3, number % 5:
+            case 0, 0:
+                print("fizzbuzz")
+            case _, 0:
+                print("buzz")
+            case 0, _:
+                print("fizz")
+            case _:
+                print(number)
+
+
 fizzbuzz2()
