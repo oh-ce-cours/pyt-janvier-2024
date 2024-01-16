@@ -39,4 +39,9 @@ def fizzbuzz3() -> None:
                 print(number)
 
 
+def fizzbuzz4() -> None:
+    for n in range(1, 101):
+        print("fizz" * (n % 3 == 0) + "buzz" * (n % 5 == 0) or str(n))
+
+
 fizzbuzz1()
