@@ -7,7 +7,7 @@ def fizzbuzz1():
             res = "FizzBuzz"
         elif num % 3 == 0 and num % 7 == 0:
             res = "FizzBazz"
-        ... 
+        ... # 5 more elifs
         elif num % 3 == 0:
             res = "Fizz"
         elif num % 5 == 0:
