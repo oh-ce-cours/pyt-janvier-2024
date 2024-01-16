@@ -1,8 +1,13 @@
 def fizzbuzz1():
     for num in range(1, 101):
         res = None
-        if num % 3 == 0 and num % 5 == 0:
+        if num % 3 == 0 and num % 5 == 0 and num % 7 == 0:
+            res = "FizzBuzzBazz"
+        elif num % 3 == 0 and num % 5 == 0:
             res = "FizzBuzz"
+        elif num % 3 == 0 and num % 7 == 0:
+            res = "FizzBazz"
+        ... 
         elif num % 3 == 0:
             res = "Fizz"
         elif num % 5 == 0:
