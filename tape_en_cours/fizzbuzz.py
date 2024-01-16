@@ -1,13 +1,15 @@
 def fizzbuzz1():
     for num in range(1, 101):
+        res = None
         if num % 3 == 0 and num % 5 == 0:
-            print("FizzBuzz")
+            res = "FizzBuzz"
         elif num % 3 == 0:
-            print("Fizz")
+            res = "Fizz"
         elif num % 5 == 0:
-            print("Buzz")
+            res = "Buzz"
         else:
-            print(num)
+            res = str(num)
+        print(res)
 
 
 def fizzbuzz2() -> None:
