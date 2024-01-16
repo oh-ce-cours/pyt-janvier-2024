@@ -52,3 +52,6 @@ def fizzbuzz_element(nombre: int) -> str:
 
 def fizzbuzz5() -> None:
     print(list(map(fizzbuzz_element, range(1, 101))))
+
+
+fizzbuzz5()
