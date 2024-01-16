@@ -36,3 +36,5 @@ def f3(x: int) -> int:
 
 a = my_map(f, [1, 2, 3])
 b = my_map(f3, [1, 2])
+
+print((help(my_map)))
