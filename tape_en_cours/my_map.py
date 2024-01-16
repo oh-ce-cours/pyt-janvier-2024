@@ -1,5 +1,6 @@
 import typing
 
+# on est obligé de définir des types génériques
 type1 = typing.TypeVar("type1")
 type2 = typing.TypeVar("type2")
 
