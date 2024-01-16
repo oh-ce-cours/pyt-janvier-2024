@@ -16,4 +16,9 @@ def f(x: int) -> str:
     return str(x)
 
 
+def f2(x: str) -> int:
+    return int(x)
+
+
 a = my_map(f, [1, 2, 3])
+b = my_map(f2, [1, 2])
