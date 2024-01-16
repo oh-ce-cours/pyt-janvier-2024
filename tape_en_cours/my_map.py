@@ -25,10 +25,10 @@ def my_map(func: typing.Callable[[type1], type2], elements: list[type1]) -> list
 def my_filter(
     func: typing.Callable[[type1], bool], elements: list[type1]
 ) -> list[type1]:
-    """reimplémentation de map
+    """reimplémentation de filter
 
     Args:
-        func (typing.Callable[[type1], type2]): la fonction a appliquer
+        func (typing.Callable[[type1], bool]): la fonction a appliquer
         elements (list[type1]): la liste d'éléments sur laquelle appliquer la fonction
 
     Returns:
