@@ -10,3 +10,10 @@ def my_map(func: typing.Callable[[type1], type2], elements: list[type1]) -> list
         tmp = func(element)
         res.append(tmp)
     return res
+
+
+def f(x: int) -> str:
+    return str(x)
+
+
+a = my_map(f, [1, 2, 3])
