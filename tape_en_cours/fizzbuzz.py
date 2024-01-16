@@ -20,3 +20,6 @@ def fizzbuzz2() -> None:
         if not res:
             res = num
         print(res)
+
+
+fizzbuzz2()
