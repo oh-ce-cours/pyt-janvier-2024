@@ -41,8 +41,12 @@ def fizzbuzz3() -> None:
 
 def fizzbuzz4() -> None:
     for nombre in range(1, 101):
-        res = "fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre)
+        res = fizzbuzz_element(nombre)
         print(res)
+
+def fizzbuzz_element(nombre:int)->str:
+    res = "fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre)
+    return res
 
 
 def fizzbuzz5() -> None: 
