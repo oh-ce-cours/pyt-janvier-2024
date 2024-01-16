@@ -6,6 +6,15 @@ type2 = typing.TypeVar("type2")
 
 
 def my_map(func: typing.Callable[[type1], type2], elements: list[type1]) -> list[type2]:
+    """reimplémentation de map
+
+    Args:
+        func (typing.Callable[[type1], type2]): la fonction a appliquer
+        elements (list[type1]): la liste d'éléments sur laquelle appliquer la fonction
+
+    Returns:
+        list[type2]: la liste où on a appliqué la fonction sur chaque élément
+    """
     res = []
     for element in elements:
         tmp = func(element)
