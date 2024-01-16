@@ -23,7 +23,7 @@ def my_map(func: typing.Callable[[type1], type2], elements: list[type1]) -> list
 
 
 def my_filter(
-    func: typing.Callable[[type1], type2], elements: list[type1]
+    func: typing.Callable[[type1], bool], elements: list[type1]
 ) -> list[type2]:
     """reimplémentation de map
 
