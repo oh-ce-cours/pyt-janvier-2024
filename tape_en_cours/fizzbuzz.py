@@ -40,8 +40,8 @@ def fizzbuzz3() -> None:
 
 
 def fizzbuzz4() -> None:
-    for n in range(1, 101):
-        print("fizz" * (n % 3 == 0) + "buzz" * (n % 5 == 0) or str(n))
+    for nombre in range(1, 101):
+        print("fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre))
 
 
 fizzbuzz4()
