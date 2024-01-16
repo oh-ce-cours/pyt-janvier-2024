@@ -18,7 +18,7 @@ def fizzbuzz2() -> None:
         if num % 5 == 0:
             res += "Buzz"
         if not res:
-            res = num
+            res = str(num)
         print(res)
 
 
