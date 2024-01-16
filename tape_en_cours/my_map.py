@@ -28,11 +28,11 @@ def my_filter(
     """reimplémentation de filter
 
     Args:
-        func (typing.Callable[[type1], bool]): la fonction a appliquer
-        elements (list[type1]): la liste d'éléments sur laquelle appliquer la fonction
+        func (typing.Callable[[type1], bool]): la fonction de test
+        elements (list[type1]): la liste d'éléments que l'on veut filter
 
     Returns:
-        list[type2]: la liste où on a appliqué la fonction sur chaque élément
+        list[type2]: la liste où on uniquement les élements qui retournent vrai pour la fonction de test
     """
     res = []
     for element in elements:
