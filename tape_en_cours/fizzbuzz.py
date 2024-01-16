@@ -37,4 +37,4 @@ def fizzbuzz3() -> None:
                 print(number)
 
 
-fizzbuzz2()
+fizzbuzz1()
