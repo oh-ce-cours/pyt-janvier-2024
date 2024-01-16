@@ -20,5 +20,9 @@ def f2(x: str) -> int:
     return int(x)
 
 
+def f3(x: int) -> int:
+    return x
+
+
 a = my_map(f, [1, 2, 3])
-b = my_map(f2, [1, 2])
+b = my_map(f3, [1, 2])
