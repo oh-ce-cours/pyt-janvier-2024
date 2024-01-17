@@ -47,13 +47,16 @@ def tomate(f):
     return wrapper
 
 
-def factory_ingredient(f):
-    def wrapper():
-        res = f()
-        print("tomate")
-        return res
+def ingredient():
+    def factory_ingredient(f):
+        def wrapper():
+            res = f()
+            print("tomate")
+            return res
 
-    return wrapper
+        return wrapper
+
+    return factory_ingredient
 
 
 @pain
