@@ -55,6 +55,6 @@ def viande():
     print("steak")
 
 
-viande = pain(salade(viande))
+# viande = pain(salade(viande))
 
 viande()
