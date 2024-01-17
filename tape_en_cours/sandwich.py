@@ -62,7 +62,10 @@ def ingredient(nom_ingredient, lower=False, upper=False):
     return factory_ingredient
 
 
-# @ingredient("pain", upper=True, lower=True)
+@ingredient("pain", upper=True, lower=True)
+@ingredient("salade", upper=True, lower=True)
+@ingredient("tomate", lower=True)
+@ingredient("fromage", upper=True)
 def viande():
     print("steak")
 
