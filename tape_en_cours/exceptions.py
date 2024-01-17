@@ -4,7 +4,7 @@ import sys
 def test2():
     try:
         return 1 + "1"
-    except TypeError:
+    except:
         return "exception"
     finally:
         print("dans finally", sys.exc_info())
