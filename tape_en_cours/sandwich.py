@@ -31,6 +31,7 @@ def salade(f):
 
 def fromage(f):
     def wrapper():
+        print("fromage")
         res = f()
         return res
 
@@ -40,6 +41,7 @@ def fromage(f):
 def tomate(f):
     def wrapper():
         res = f()
+        print("tomate")
         return res
 
     return wrapper
