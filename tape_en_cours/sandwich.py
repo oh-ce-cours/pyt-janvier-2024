@@ -21,7 +21,9 @@ def pain(f):
 
 def salade(f):
     def wrapper():
+        print("salade")
         res = f()
+        print("salade")
         return res
 
     return wrapper
