@@ -6,5 +6,5 @@ except (IndexError, ArithmeticError) as e:
 else:
     print("suite logique du code qui peut lever une exception")
     print("mais qui n'en lève pas lui-même")
-
-print("appelé quel que soit le parcours d'exception")
+finally:
+    print("appelé quel que soit le parcours d'exception")
