@@ -1,5 +1,5 @@
 while True:
     try:
         print("ok")
-    except BaseException as e:
+    except Exception as e:
         print(e)
