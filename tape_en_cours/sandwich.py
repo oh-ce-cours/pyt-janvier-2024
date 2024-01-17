@@ -17,13 +17,32 @@ def pain(f):
     return wrapper
 
 
-def salade():
-    print("salade")
+def salade(f):
+    def wrapper():
+        res = f()
+        return res
+
+    return wrapper
+
+
+def fromage():
+    def wrapper():
+        res = f()
+        return res
+
+    return wrapper
+
+
+def tomate():
+    def wrapper():
+        res = f()
+        return res
+
+    return wrapper
 
 
 @pain
 @salade
-@ingredient("fromage")
 def viande():
     print("steak")
 
