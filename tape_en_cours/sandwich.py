@@ -45,10 +45,8 @@ def tomate(f):
     return wrapper
 
 
-@pain
 @salade
-@fromage
-@tomate
+@pain
 def viande():
     print("steak")
 
