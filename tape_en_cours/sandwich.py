@@ -47,7 +47,7 @@ def tomate(f):
     return wrapper
 
 
-def ingredient(nom_ingredient, lower=False, upper=False):
+def ingredient(nom_ingredient, lower, upper):
     def factory_ingredient(f):
         def wrapper():
             if upper:
