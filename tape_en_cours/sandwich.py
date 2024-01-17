@@ -72,6 +72,8 @@ def viande():
 
 # viande = pain(salade(viande))
 
-# viande = (ingredient("pain", True, True))(viande)
+salade = ingredient("salade", True, True)
+pain = ingredient("pain", True, True)
+viande = (salade)(pain)(viande))
 
 viande()
