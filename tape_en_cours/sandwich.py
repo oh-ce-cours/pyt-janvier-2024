@@ -47,7 +47,7 @@ def tomate(f):
     return wrapper
 
 
-def ingredient():
+def ingredient(nom_ingredient, lower=False, upper=False):
     def factory_ingredient(f):
         def wrapper():
             res = f()
@@ -59,15 +59,13 @@ def ingredient():
     return factory_ingredient
 
 
-@pain
-@salade
-@fromage
-@tomate
 @ingredient("pain", upper=True, lower=True)
 def viande():
     print("steak")
 
 
 # viande = pain(salade(viande))
+
+viande = (ingredient("pain", True, True))(viande)
 
 viande()
