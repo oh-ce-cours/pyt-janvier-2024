@@ -45,10 +45,12 @@ def tomate(f):
     return wrapper
 
 
-@salade
 @pain
+@salade
 def viande():
     print("steak")
 
+
+viande = pain(salade(viande))
 
 viande()
