@@ -11,7 +11,9 @@
 
 def pain(f):
     def wrapper():
+        print("pain")
         res = f()
+        print("pain")
         return res
 
     return wrapper
