@@ -9,8 +9,12 @@
 # pain
 
 
-def pain():
-    print("pain")
+def pain(f):
+    def wrapper():
+        res = f()
+        return res
+
+    return wrapper
 
 
 def salade():
@@ -19,6 +23,7 @@ def salade():
 
 @pain
 @salade
+@ingredient("fromage")
 def viande():
     print("steak")
 
