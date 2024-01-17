@@ -5,3 +5,6 @@ def test2():
         return "exception"
     finally:
         return "finally"
+
+
+print(test2())
