@@ -25,7 +25,7 @@ def salade(f):
     return wrapper
 
 
-def fromage():
+def fromage(f):
     def wrapper():
         res = f()
         return res
@@ -33,7 +33,7 @@ def fromage():
     return wrapper
 
 
-def tomate():
+def tomate(f):
     def wrapper():
         res = f()
         return res
@@ -43,6 +43,8 @@ def tomate():
 
 @pain
 @salade
+@fromage
+@tomate
 def viande():
     print("steak")
 
