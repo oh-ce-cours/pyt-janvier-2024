@@ -47,6 +47,8 @@ def tomate(f):
 
 @pain
 @salade
+@fromage
+@tomate
 def viande():
     print("steak")
 
