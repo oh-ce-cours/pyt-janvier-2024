@@ -52,10 +52,6 @@ def tomate(f):
 @fromage
 @tomate
 def viande():
-    import ipdb
-
-    ipdb.set_trace()
-
     print("steak")
 
 
