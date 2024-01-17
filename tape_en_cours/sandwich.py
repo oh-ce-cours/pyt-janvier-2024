@@ -50,8 +50,11 @@ def tomate(f):
 def ingredient(nom_ingredient, lower=False, upper=False):
     def factory_ingredient(f):
         def wrapper():
+            if upper:
+                print(nom_ingredient)
             res = f()
-            print("tomate")
+            if lower:
+                print(nom_ingredient)
             return res
 
         return wrapper
