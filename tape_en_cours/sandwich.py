@@ -9,6 +9,16 @@
 # pain
 
 
+def pain():
+    print("pain")
+
+
+def salade():
+    print("salade")
+
+
+@pain
+@salade
 def viande():
     print("steak")
 
