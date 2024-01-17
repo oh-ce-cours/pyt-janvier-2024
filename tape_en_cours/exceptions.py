@@ -4,6 +4,7 @@ def test2():
     except IndexError:
         return "exception"
     finally:
+        print("finally")
         return "finally"
 
 
