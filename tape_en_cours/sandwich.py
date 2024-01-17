@@ -47,7 +47,7 @@ def tomate(f):
     return wrapper
 
 
-def generateur_ingredient(f):
+def factory_ingredient(f):
     def wrapper():
         res = f()
         print("tomate")
