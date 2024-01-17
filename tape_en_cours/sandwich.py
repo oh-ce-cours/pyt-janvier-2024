@@ -63,6 +63,7 @@ def ingredient():
 @salade
 @fromage
 @tomate
+@ingredient("pain", upper=True, lower=True)
 def viande():
     print("steak")
 
