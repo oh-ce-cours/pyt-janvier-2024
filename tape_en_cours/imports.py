@@ -1,3 +1,5 @@
-from sys import executable 
+from sys import executable
 
-sys.
+sys
+
+max = 2
