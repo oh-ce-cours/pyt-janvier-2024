@@ -6,3 +6,5 @@ try:
     import networkx
 except:
     print("can't import networkx")
+
+print("fini")
