@@ -1,3 +1,5 @@
+import sys
+
 a = 1
 b = 0
 
@@ -8,5 +10,6 @@ try:
     import networkx
 except:
     print("can't import networkx")
+
 
 print("fini")
