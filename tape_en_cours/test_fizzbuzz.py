@@ -4,4 +4,4 @@ import unittest
 
 class TestFizzBuzz(unittest.TestCase):
     def test_fizz(self):
-        self.assertEqual(fizzbuzz_element(3), "fizz")
+        self.assertEqual(fizzbuzz_element(4), "fizz")
