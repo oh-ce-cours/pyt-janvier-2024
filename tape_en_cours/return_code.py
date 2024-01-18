@@ -10,6 +10,8 @@ try:
     import networkx
 except:
     print("can't import networkx")
+
+    # on peut faire un sys.exit(27) pour sortir avec un code d'erreur
     sys.exit(27)
 
 print("fini")
