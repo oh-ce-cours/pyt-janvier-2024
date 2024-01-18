@@ -54,5 +54,9 @@ def fizzbuzz5() -> None:
     print(list(map(fizzbuzz_element, range(1, 101))))
 
 
-if __name__ == "__main__":
+def main():
     fizzbuzz5()
+
+
+if __name__ == "__main__":
+    main()
