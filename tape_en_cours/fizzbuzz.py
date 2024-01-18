@@ -46,6 +46,9 @@ def fizzbuzz4() -> None:
 
 
 def fizzbuzz_element(nombre: int) -> str:
+    if not isinstance(nombre, int):
+        raise TypeError("Implemented only for int")
+
     res = "fizz" * (nombre % 3 == 0) + "buzz" * (nombre % 5 == 0) or str(nombre)
     return res
 
