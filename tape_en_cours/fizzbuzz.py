@@ -58,5 +58,6 @@ def main():
     fizzbuzz5()
 
 
+print("dans fizzbuzz", __name__)
 if __name__ == "__main__":
     main()
