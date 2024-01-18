@@ -1,7 +1,7 @@
 a = 1
 b = 0
 
-a / b
+# a / b
 
 try:
     a / b
