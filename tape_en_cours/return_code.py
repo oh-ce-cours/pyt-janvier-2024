@@ -10,6 +10,6 @@ try:
     import networkx
 except:
     print("can't import networkx")
-
+    sys.exit(27)
 
 print("fini")
