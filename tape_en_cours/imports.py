@@ -5,4 +5,6 @@
 
 from fizzbuzz import fizzbuzz_element
 
+print("dans import", __name__)
+
 print(fizzbuzz_element(10))
