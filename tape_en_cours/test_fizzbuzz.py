@@ -13,7 +13,7 @@ class TestFizzBuzz(unittest.TestCase):
         self.assertEqual(fizzbuzz_element(15), "fizzbuzz")
 
     def test_other(self):
-        self.assertEqual(fizzbuzz_element(2), "3")
+        self.assertEqual(fizzbuzz_element(2, 3), "3")
 
 
 if __name__ == "__main__":
