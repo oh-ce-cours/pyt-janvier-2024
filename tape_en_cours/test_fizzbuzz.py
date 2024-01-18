@@ -17,7 +17,7 @@ class TestFizzBuzz(unittest.TestCase):
 
     def test_wrong_type(self):
         with self.assertRaises(TypeError):
-            fizzbuzz_element(2)
+            fizzbuzz_element("2")
 
 
 if __name__ == "__main__":
